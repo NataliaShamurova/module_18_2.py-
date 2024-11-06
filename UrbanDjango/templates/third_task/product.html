@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Товары</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+        <ul>
+            {% for item, price in context.items %}
+            <li>{{ item }} - {{price}} <button>Купить</button></li>
+            {% endfor %}
+        </ul>
+        <div>
+            <a href="/" style="text-decoration: none;">
+                <button>Вернуться на главную страницу</button>
+             </a>
+        </div>
+</body>
+</html>
