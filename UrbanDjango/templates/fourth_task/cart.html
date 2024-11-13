@@ -1,5 +1,7 @@
-
+{% extends "menu.html" %}
+{% block pagename %}
 <h1>{{ title }}</h1>
+{% endblock %}
 {% block menu %}
 <ul>
     <li><a href="{% url 'home' %}">Главная страница</a></li>
@@ -8,6 +10,7 @@
     {% endfor %}
 </ul>
 {% endblock %}
+{% block content %}
 <div>
     <a href="{% url 'product' %}"><button>К выбору товаров</button></a></div>
 <div>
@@ -16,6 +19,7 @@
     </a>
 </div>
 <h1>{{ content }}</h1>
+{% endblock %}
 
 
 
